@@ -1,0 +1,42 @@
+1. Create a virtual environment
+- Create a virtual environment to install all the dependencies we need for our project to run.
+- The virtual env will be activated whenever we want to work on our project.
+Command: python3 -m venv .venv
+- Activate the virtual env
+Command: . .venv/bin/activate
+
+2. Installing dependencies
+ I. Django
+    Command: pip install django
+ II. Django rest framework
+    Command: pip install djangorestframework
+
+3. Command: django-admin - To see other usefull stuff for our application.
+
+4. Start project
+Command: django-admin startproject drinks .
+
+5. Start the server
+manage.py is a wrapper around the django admin that does a little extra setup for us.
+Command: python manage.py runserver
+
+6. Open a new terminal tab
+- Activate . .venv/bin/activate and then migrate with.
+Command: python manage.py migrate
+
+7. Go to admin page on the browser by adding /admin
+- Set up account credentials
+Command: python manage.py createsuperuser
+
+8. Create a table in the admin panel. 
+To do that:
+Create a new model in the inner drinks folder (models.py)
+
+9. Cont inside models.py
+
+10. After 9, add the name 'rest_framework' to INSTALLED_APPS inside settings.py
+
+11. Inside the drinks folder, create a file named 'serializers.py' 
+- This will describe the process of going from a python object to JSON.
+
+12. Next instructions inside serializers.py
